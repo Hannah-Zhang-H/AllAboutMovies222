@@ -372,7 +372,7 @@ def main():
     ax.axis('off')
     ax.tick_params(top='off', right='off')
 
-    st.pyplot(fig)
+    st.pyplot(fig.figure)
     
     
     st.write('                            ')
