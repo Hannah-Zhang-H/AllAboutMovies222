@@ -249,7 +249,7 @@ def main():
     else:
         st.success('Successfully uploaded!')
         data3 = pd.read_csv(uploader_file3)
-        data3.dropna(inplace=True)
+#         data3.dropna(inplace=True)
         
         
     # data processing
@@ -344,6 +344,7 @@ def main():
     movie_type = movie_type.apply(pd.Series)
     # Use the unstack function to rotate rows into columns and rearrange data:
     movie_type = movie_type.apply(pd.value_counts)
+    movie_type.unstack()
     # At this time, the data is a Series, remove the null value, and convert it to Dataframe by reset_index()
     movie_type = movie_type.unstack().dropna().reset_index()
     # Summary of movie genres
@@ -372,7 +373,7 @@ def main():
     ax.axis('off')
     ax.tick_params(top='off', right='off')
 
-    st.pyplot(fig.figure)
+    st.pyplot(fig)
     
     
     st.write('                            ')
