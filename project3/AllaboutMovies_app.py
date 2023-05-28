@@ -351,10 +351,14 @@ def main():
     movie_type.columns =['level_0','type','counts']
     amovie_type_m = movie_type.drop(['level_0'],axis=1).groupby('type').sum().sort_values(by=['counts'],ascending=False).reset_index()
 #     size = [1100, 900, 759, 416, 323, 300, 286, 180, 148, 136, 128, 105, 104, 103, 92]
-    size = [1100, 900, 759, 416, 323, 300, 286, 180, 148, 136, 128, 105, 104, 103, 92, 0]
-
+    size = [1100, 900, 759, 416, 323, 300, 286, 180, 148, 136, 128, 105, 104, 103, 92]
     name = ['Drama', 'Action', 'Adventure', 'Comedy', 'Suspense', 'Thriller', 'Horror', 'Romantic Comedy',
-            'Black Comedy', 'Documentary', 'Musical', 'Western', 'Concert', 'Performance', 'Multiple Genres', 'Reality']
+        'Black Comedy', 'Documentary', 'Musical', 'Western', 'Concert', 'Performance', 'Multiple Genres']
+
+# 其他代码部分保持不变
+
+#     name = ['Drama', 'Action', 'Adventure', 'Comedy', 'Suspense', 'Thriller', 'Horror', 'Romantic Comedy',
+#             'Black Comedy', 'Documentary', 'Musical', 'Western', 'Concert', 'Performance', 'Multiple Genres', 'Reality']
     colors = ['steelblue', '#9999ff', 'red', 'indianred', 'green', 'yellow', 'orange']
 
     fig, ax = plt.subplots(figsize=(8, 6))
