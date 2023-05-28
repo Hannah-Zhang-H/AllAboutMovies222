@@ -52,8 +52,8 @@ def main():
     # set pic
     #     image = Image.open('/Users/hanhan/project3/headerPic.png')
 #     st.image(image)
-    st.image('headerPic.png')
-    
+#     st.image('headerPic.png')
+    st.image('project3/headerPic.png')
     
 #     ################################################################################# 
     
