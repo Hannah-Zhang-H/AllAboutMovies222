@@ -61,7 +61,7 @@ def main():
         
 #     ################################################################################# 
 
-    st.image('JieBackground.jpeg', width = 800)
+    st.image('project3/JieBackground.jpeg', width = 800)
     st.header("Jie Chang")
 #     # 1. Data scrapping
 #     # header
@@ -406,7 +406,7 @@ def main():
 
     ################################################################################# 
     
-    st.image('HanBackground.webp')
+    st.image('project3/HanBackground.webp')
     st.header('Han Zhang')
     # 1. film filter model
     # header
@@ -582,7 +582,7 @@ def main():
     ################################################################################# 
     
     
-    st.image('LeiBackground.jpg', width = 700)
+    st.image('project3/LeiBackground.jpg', width = 700)
     st.header('Lei Liu')
     # Data Wrangling
     st.subheader('Data Wrangling - Dealing with date and time')
@@ -706,7 +706,7 @@ def main():
 #     plt.show()
     st.title('Scatter Plot Matrix')
 #     st.pyplot(plt)
-    st.image('LeiLiufig 3 - Scatter Plot Matrix.png')
+    st.image('project3/LeiLiufig 3 - Scatter Plot Matrix.png')
 
  
     
@@ -719,7 +719,7 @@ def main():
     
     ### R2 and RMSE
     st.write('fig 4 - RSquare for the KNeighborsRegressorlots and RMSE for the KNeighborsRegressor')
-    st.image("LeiLiuRSquare_fig4.png")
+    st.image("project3/LeiLiuRSquare_fig4.png")
     scaler = MinMaxScaler()
     scaled_df = pd.DataFrame(scaler.fit_transform(box_office_df), columns=box_office_df.columns)
     X = scaled_df.drop('International Box Office', axis=1)
